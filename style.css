@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("products/bbg1.png");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+h1 {
+    padding-top: 0.5%;
+    padding-right: 1%;
+    height: 50px;
+    text-align: right;
+    letter-spacing: 1rem;
+    color: rgb(0, 0, 0);
+    background-image: url("products/hbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.product {
+    width: 380px;
+    height: 420px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    transform: translate (-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+.a p {
+    margin: 0;
+    padding-bottom: 2%;
+    margin-top: 10%;
+    margin-left: 50%;
+    font-size: 20px;
+}
+.a p1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 50%;
+    font-size: 20px;
+}
+.a input[type = "text"] {
+    border: 2px solid mediumvioletred;
+    width: 7%;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    height: 20px;
+}
+.b input[type = "button"] {
+    margin: 0;
+    margin-left: 50%;
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+    background-color: lightskyblue;
+    border: solid 1.5px rgb(0, 0, 0);
+    border-right: none;
+    width: 5%;
+    font-size: 15px;
+}
+.b button {
+    border-radius: 20px 20px 20px 20px;
+    outline: none;
+    background-color: lightskyblue;
+    border: solid 1.5px rgb(0, 0, 0);
+    border-right: none;
+    width: 5%;
+    font-size: 15px;
+}

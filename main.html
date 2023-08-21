@@ -1,0 +1,198 @@
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>Lazhopee</h1>
+
+<div class="product">
+      <img src="products/product1.png"  id ="mainImage" width="300px" height="280px">
+      <br><br>
+      <span id="success" style="color:rgb(0, 217, 255)"  >Kent Scott print GG Marmont super mini bag</span>
+</div>
+ 
+<div class="a">
+    <form>
+        
+        <p>Price: $ <input type="text" value="980"  id="price" disabled/></p>
+        <p1>Quantity: <input type="text" id="quantity" /></p1>
+
+    </form>
+</div>
+
+<br>
+      <div class="b">
+            <input type="button"  id = "result" onclick="multiplyBy()" value="Order">
+            <button onclick="changeImage()" >Next</button>
+      </div>
+
+   <script>
+      var myImage = document.getElementById('mainImage');
+      var imageArray = ["products/product1.png","products/product2.png","products/product3.png","products/product4.png","products/product6.png","products/product5.png"];
+            
+      var imageIndex = 1;
+      var txtIndex=0;
+      var Price;
+      var a = null;
+
+      function changeImage()
+       {
+         myImage.setAttribute("src", imageArray[imageIndex]);
+         imageIndex++;
+                        
+            if (imageIndex > 5) {imageIndex = 0;}
+                        
+            if (imageIndex == 1)
+                  { var b = 980;
+                        Price=b.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "Kent Scott print GG Marmont super mini bag";
+                        //alert("Product name: Couple Portrait + Semi-detailed");
+                  }
+            else if (imageIndex == 2)
+                  { var c = 2250;
+                        Price=c.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "GG Marmont small matelassé shoulder bag";
+                        //alert("Product name: Solo Portrait w/ Full Background");
+                  }  
+            else if (imageIndex == 3)
+                  { var d = 1300;
+                        Price=d.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "Short denim dress with Gucci Boutique";
+                        //alert("Product name: Solo Portrait x Customized Artwork");
+                  }
+            else if (imageIndex == 4)
+                  { var e = 3500;
+                        Price=e.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "Shearling bouclé coat";
+                        //alert("Product name: Solo Portrait x Anime Inspired");
+                  }  
+            else if (imageIndex == 5)
+                  { var f = 830;
+                        Price=f.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "Women's leather pump with chain";
+                        //alert("Product name: Inverted Artwork");
+                  }  
+            else
+                  { var g = 950;
+                        Price=g.toString();
+                        document.getElementById("price").value = Price;
+                        document.getElementById('success').innerHTML = "Women's mid-heel loafer with chain";
+                        //alert("Product name: Inverted Artwork");
+                  
+                  }     
+                        document.getElementById("quantity").value=a;    
+                  }
+                           
+      function MyOrder()
+        {
+           var a = null;
+               document.getElementById("quantity").value=a;
+        }
+            
+            var z=1;
+            var add;
+            var add1;
+            var add2;
+            var add3;
+            var add4;
+            var add5;
+            var add6;
+            var add7=0;
+            var addA;
+            var addB;
+            var addC;
+            var addD;
+            var addE;
+            var addF;
+            
+            function multiplyBy()
+            {
+                  if (z==1)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addA = num1 * num2;
+                        add1=addA;
+                        add=add1;
+                        document.getElementById("result").innerHTML=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00");}
+                  z=2;
+                  }
+                  else if (z==2)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addB = num1 * num2;
+                        add2=addA+addB+add7; 
+                        add=add2;
+                        document.getElementById("result").innerHTML=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00");}
+                  z=3;
+                  }  
+            else if (z==3)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addC = num1 * num2;
+                        add3=add2+addC; 
+                        add=add3;      
+                        document.getElementById("result").innerHTML=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00");}
+                  z=4; 
+                  }  
+                  else if (z==4)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addD = num1 * num2;
+                        add4=add3+addD; 
+                        add=add4;
+                        document.getElementById("result").innerHTML=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00");}
+                  z=5;
+                  }  
+                  else if (z==5)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addE = num1 * num2;
+                        add5=add4+addE; 
+                        add=add5;
+                        document.getElementById("result").innerHTML=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00");}
+                  z=6;
+                  } 
+                  else if (z==6)
+                  {
+                        num1 = document.getElementById("price").value;
+                        num2 =document.getElementById("quantity").value;
+                        addF = num1 * num2;
+                        add6=add5+addF; 
+                        add=add6;
+                        document.getElementById("result").innerHTML=add;
+                        add7=add;
+                  if (add==add)
+                        { alert("The total of your order is $ "+add+".00"); }
+                  z=2;
+                  } 
+            else
+            {
+                  alert("Thank You!");
+            }
+      }   
+    </script>      
+</body>
+</html>
